@@ -16,3 +16,17 @@
 
 경고 : SIFT meets CNN 논문을 읽다가 찾아보았는데 이게 논문에서 나온 단어와 같은 의미인지 아직 파악되지 않았음
 
+## ANN(approximate nearest neighbor)
+
+최근접 이웃탐색. 
+https://en.wikipedia.org/wiki/Nearest_neighbor_search#Approximate_nearest_neighbor
+https://brunch.co.kr/@goodvc78/15
+https://www.slideshare.net/erikbern/approximate-nearest-neighbor-methods-and-vector-models-nyc-ml-meetup
+https://github.com/spotify/annoy
+
+ANN 연산은 brute force할 때 Vector의 개수만큼 유사도 비교 연산을 필요로 한다. 그런데 Vector의 수가 1M이 넘어가기 시작하면 서버로 때우기 힘들어진다. 그리고 Vector가 현재 일반적인 사비스에서 100~1000차원이 되기 때문에 데이터 규모에 따라 연산량이 폭발한다.
+
+그래서 github.com/spotify에서는 100%는 아니지만 높은 정확도로 근접벡터를 찾아주는 오픈소스 Annoy(Approximate Nearest Neighbors Oh Yeah) 라는걸 만들었다고 한다.
+
+
+
